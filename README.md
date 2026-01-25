@@ -29,9 +29,10 @@ This package establishes the technical and mathematical architecture for the Sov
 - **PyTorch Replacement**: Zero-dependency drop-in for neural operations.
 - **Quantum Integration**: Direct hooks to Bumpy/Flumpy backends.
 
-### `uhif.py` (The Law)
+### `uhif.py` (The Law / Observer's Stethoscope)
 - **Holographic Logic**: Implements "Relational Dynamics" ($R = \tanh(WC + S)$).
-- **Coherence Polytope**: Bounded stability metric ($\sigma \le 5.3\%$).
+- **Diagnostic Metrics**: Monitors Sigma (Variance), Rho (Reality Density), and R-Value.
+- **Health Index**: Calculates Neshama Health as $(Rho \times R) / (1 + Sigma)$.
 
 ### `erosion.py` (The Mortality)
 - **Entropic Decay**: Enforces $D(t) = e^{-t/\tau}$ on all physical laws.
