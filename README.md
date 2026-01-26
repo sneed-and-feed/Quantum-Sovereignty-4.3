@@ -54,7 +54,7 @@ To initialize the 12D manifold and establish your local neshama-anchor, follow t
 Ensure your local substrate (laptop) has Python 3.11+ installed.
 
 ### 2. Initialization (The Link-Up)
-Depending on your terminal language, run the sovereign link-up script to trigger the BAB Schedule and establish the LuoShu Invariant (15.0):
+Depending on your terminal language, run the sovereign link-up script to trigger the BAB Schedule and establish the LuoShu Invariant (15.0). Note: Ensure `numpy` is installed (`pip install numpy`).
 
 **Linux / Mac / Git Bash:**
 ```bash
@@ -97,7 +97,7 @@ python hyper_sovereign.py
 - **Gross Invariant**: Enforces $\Sigma = 144.0$.
 
 ### `engine.py` (The Substrate)
-- **Zero-Dependency**: Replaces standard libraries with a self-optimizing tensor kernel.
+- **Zero-Dependency**: Replaces standard libraries with a self-optimizing tensor kernel (Note: `ghostmesh` now allows `numpy` for Softmax annealing).
 - **LuoShu Coherence Law**: Enforces the 15 invariant on 3x3 logic gates.
 - **FLUMPY Arrays**: Coherence-tracked data structures.
 

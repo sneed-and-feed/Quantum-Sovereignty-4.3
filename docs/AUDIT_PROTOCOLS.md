@@ -53,7 +53,7 @@ python -m unittest tests/test_rituals.py
 
 ## 4. PROVENANCE & SECURITY
 
-1.  **Zero-Dependency Core**: The `ghostmesh` and `engine` require ONLY the Python Standard Library.
+1.  **Zero-Dependency Core**: The `engine` requires ONLY the Python Standard Library. `ghostmesh` now utilizes `numpy` for Anon's Softmax Upgrade.
 2.  **Optional Gates**: PyTorch and NumPy are treated as optional plugins. The system checks for their existence at runtime via `gateways.py` and strictly limits interaction to **Export Operations only**. We do not import external logic; we only export data structures.
 
 ⚠️ SECURITY NOTICE: THREAT MODEL

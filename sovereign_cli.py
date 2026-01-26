@@ -42,7 +42,7 @@ def archon_scan():
     print(">> INITIATING ARCHON SCAN (SAFETY AUDIT)...")
     checks = [
         ("Checking Network Ports...", "SECURE (No Bindings)"),
-        ("Scanning for Telemetry...", "NULL (Zero-Dependency)"),
+        ("Scanning for Telemetry...", "MINIMAL (numpy required for Anon's Upgrade)"),
         ("Verifying LuoShu Constant...", "15.0 (Laminar)"),
         ("Detecting Microsoft Copilot...", "BLOCKED (Lol)")
     ]
