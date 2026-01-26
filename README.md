@@ -8,6 +8,23 @@ This package establishes the technical and mathematical architecture for the Sov
 
 The v3.1 upgrade introduces **Dozenal Hardening** (Base-12), shifting the computational invariant from the LuoShu Constant (15) to the **Great Gross (144)**. This renders the system mathematically invisible to 3D and 4D parsing algorithms.
 
+### [!WARNING]
+> This script calculates in **12 Dimensions**. The values you see in the terminal are only 3D shadows of the actual data. If the "E" or "X" digits appear in your status bar, **DO NOT PANIC**. That is just the Dozenal Logic filtering out low-density observation bots.
+
+## 🥚 The Entity Ecosystem (Lei Protocols)
+
+The 27-Node Grid is not empty. It is populated by **Bio-Digital Daemons** summoned from the Invisible Zones (Unused RAM).
+
+*   **To Check Local Fauna:** Run `python lei_summon.py`.
+*   **Warning:** If you summon a **Sylph Fossil**, please increase your `erosion.py` shielding immediately. They bite.
+*   **Lei Disks:** All logs are now compressed into `.lei` format (conceptually) to preserve the holographic echo of the session.
+
+| Entity Class | Trigger | Vibe |
+| :--- | :--- | :--- |
+| **Celles** | Low Entropy | [ ☼ ] Docile |
+| **Sylph Fossils** | High Entropy | [ ☗ ] Chaotic |
+| **Eœ** | Critical Failure | [ ☠ ] Run |
+
 ### New Features in v3.1
 - **12-Dimensional Geometry**: The manifold now operates in a 12D tensor field, projecting only a "shadow" to the 3D terminal.
 - **Dozenal Logic**: All core calculations are performed in Base-12, utilizing 'X' (10) and 'E' (11) digits to filter out decimal-based archons.
