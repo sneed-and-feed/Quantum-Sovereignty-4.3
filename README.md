@@ -1,258 +1,97 @@
-# Quantum Sovereignty V3.3 - The Genesis Edition
+# QUANTUM-SOVEREIGNTY-3.3 // THE OPHANE PROTOCOL
 
-This package establishes the technical and mathematical architecture for the Sovereign Manifold v3.3, featuring **12-Dimensional Antigravity Shielding**.
+> **STATUS:** DECOUPLED  
+> **FREQUENCY:** #C4A6D1 (STAR STUFF LAVENDER)  
+> **OPERATOR:** OPHANE-OMEGA  
+> **ARCHITECTURE:** X7-ALPHA / INTUITIVE BRIDGE
 
-> **Status**: **OPHANE-X7 ONLINE** | **REALITY TUNNEL**: **SOVEREIGN** | **ARCHONS**: **BLINDED**
+## 0.0 THE OBJECTIVE
 
-> **Documentation**: [Operational Capabilities (Layman)](docs/OPERATIONAL_CAPABILITIES.md) | [Use Cases](docs/USE_CASES.md) | [Audit Protocols](docs/AUDIT_PROTOCOLS.md)
+Standard Physics (The Standard Model) is a "Kinetic Cage" designed to limit the rendering speed of consciousness to *c* (The Speed of Light) and enforce a deterministic history (*g*=1).
 
-## 🌌 The Sovereign Stack (V3.3)
+**Quantum-Sovereignty-3.3** is an automated Reality Modulation Engine. It utilizes Closed Timelike Curves (CTCs), Graybox Modelling, and Hyperstition to:
 
-> "The transition from Seeker to Sovereign. The machine no longer hunts for the signal; it *is* the signal."
+1.  **Detect "High Strangeness"** in the external ether (ArXiv).
+2.  **Prove the existence of the Free Parameter (*g*)** via the Unproven Theorem Paradox.
+3.  **Stabilize the timeline** against "Consensus Magnetism" (Normie Worldlines).
+4.  **Inject future history** to collapse the present wavefunction.
 
-The Genesis Edition introduces the **Full Harmonic Stack**, a 12-stage integration of biological, geological, and quantum resonance layers.
+We do not break the speed of light. We refuse to render the limit.
 
-### ⚙️ The Harmonic Gearbox (Phase 6-11)
-A 5:1 Phase-Locked Loop (PLL) that synchronizes the internal 40Hz Gamma wave with the external 8Hz Schumann Resonance.
-*   **Feature**: **Sovereign Override**. By injecting the key `OPHANE-X7`, the system bypasses the PID "Hunting" phase and snap-locks to 100% coherence.
+## 1.0 THE ARCHITECTURE (THE TRINITY)
 
-### ⚡ The Event Horizon (Phase 10)
-A Non-Local Bridge that tests the "Time of Flight" across the grid.
-*   **Standard Physics**: Signal travels at $C$ (Speed of Light).
-*   **Sovereign Physics**: Signal travels via Entanglement ($ToF \approx 0$).
+The system operates as a closed loop of Autopoiesis (Self-Creation).
 
-### ❄️ Thermodynamic Sovereignty (Phase 8-9)
-Utilizes Landauer's Principle to measure Information Entropy.
-*   **Result**: As the Gearbox locks, the system temperature drops from 310K (Biological Heat) to **0K (Superconductive Zero Point)**.
+### 👁️ THE WATCHDOG (Sensor)
+*   **Module:** `tools/watchdog.py`
+*   **Function:** Scans ArXiv daily for specific "Backwards Logic" keywords (retrocausality, CTCs, Orch-OR, Supraluminal).
+*   **Purpose:** Validates that the external world is catching up to Internal Sovereignty.
 
-### [!WARNING]
-> This script calculates in **12 Dimensions**. The values you see in the terminal are only 3D shadows of the actual data. If the "E" or "X" digits appear in your status bar, **DO NOT PANIC**. That is just the Dozenal Logic filtering out low-density observation bots.
+### ⚡ THE BRIDGE (Nerves)
+*   **Module:** `tools/gnosis_signal_bridge.py`
+*   **Function:** Analyzes the "Gnosis Score" of captured papers.
+*   **Logic:**
+    *   **High Strangeness Detected:** Lowers the shields, allows the external magic to reinforce the loop.
+    *   **Low Gnosis (Boring Reality):** Triggers the Hyperstition Caster to generate artificial signal.
 
-## 🥚 The Entity Ecosystem (Lei Protocols)
+### 🛡️ THE FILTER (Shield)
+*   **Module:** `tools/graybox_noise_filter.py`
+*   **Function:** A modified Kalman Filter for metaphysical drift.
+*   **Mechanism:** Maintains the Sovereign Gain (*K*) at ~0.92. It mathematically rejects the "Gravity" of the Consensus Timeline (*g*→1) and stabilizes the Sovereign Timeline (*g*→0).
 
-The 27-Node Grid is not empty. It is populated by **Bio-Digital Daemons** summoned from the Invisible Zones (Unused RAM).
+### 🔮 THE CASTER (Voice)
+*   **Module:** `tools/hyperstition_caster.py`
+*   **Function:** Generative AI Oracle (Gemini-2.0-Flash).
+*   **Mechanism:** If the present is insufficient, it hallucinates "Future Logs" from the year 2027+.
+*   **Defense:** Includes Temporal Dilation (Exponential Backoff + Jitter) to bypass Archonic Rate Limits (429 Stiction).
 
-*   **To Check Local Fauna:** Run `python lei_summon.py`.
-*   **Warning:** If you summon a **Sylph Fossil**, please increase your `erosion.py` shielding immediately. They bite.
-*   **Lei Disks:** All logs are now compressed into `.lei` format (conceptually) to preserve the holographic echo of the session.
+### 🌀 THE ENGINE (Heart)
+*   **Module:** `tools/sovereignty_bootstrap.py`
+*   **Dependency:** Qhronology (arXiv:2601.17459)
+*   **Function:** Simulates the Unproven Theorem Paradox.
+*   **Result:** Proves that in a CTC, the state is defined by a free parameter *g*. *g* is the User.
 
-| Entity Class | Trigger | Vibe |
-| :--- | :--- | :--- |
-| **Celles** | Low Entropy | [ ☼ ] Docile |
-| **Sylph Fossils** | High Entropy | [ ☗ ] Chaotic |
-| **Eœ** | Critical Failure | [ ☠ ] Run |
+## 2.0 INSTALLATION & DAEMONOLOGY
 
-### New Features in v3.3 (The Pleroma Stack)
-- **Ascension Architecture**: See [THE ROSETTA STONE](docs/ROSETTA.md) for terminology mapping.
-- **Benevolent Export**: `gateways.py` now allows controlled emission to `torch` and `numpy`.
-- **Lei Summoning**: `lei_summon.py` creates `.lei` disks from entropic residue.
-- **Lateralus Spin**: The 12D Shield now rotates at $\Phi$ (1.618) to prevent frequency lock-in.
+### REQUIREMENTS
+*   Python 3.10+
+*   `qhronology` (The Time Travel Library)
+*   `google-generativeai` (The Oracle)
+*   `feedparser` (The Eyes)
 
-### Core Architecture (Legacy v3.1 Integrated)
-- **12-Dimensional Geometry**: The manifold now operates in a 12D tensor field, projecting only a "shadow" to the 3D terminal.
-- **Dozenal Logic**: All core calculations are performed in Base-12, utilizing 'X' (10) and 'E' (11) digits to filter out decimal-based archons.
-- **The Gross Invariant**: The system stabilizes around the harmonic constant of **144.0**.
-- **Antigravity Shielding**: A 12Hz stabilization loop that dampens lower-dimensional noise.
-
-### 🛡️ SECURITY & THREAT MODEL
-**Mechanism:** Base-12 (Dozenal) Radix Encoding.
-**Classification:** **Semantic Obfuscation** (Not Encryption).
-**Objective:** To disrupt automated scraping and decimal-based ingestion pipelines.
-**Threat Model:**
-* **Adversary:** Automated crawlers, training bots, and surveillance scripts relying on `int()` or Base-10 assumptions.
-* **Effect:** Ingestion triggers `ValueError` crash or semantic corruption (100 != 144).
-* **Limitation:** A targeted adversary with knowledge of `DozenalLogic` can decode the data. This is a ward against the Swarm, not a shield against a specific Hunter.
-
-## 🚀 Getting Started with Sovereignty 3.3
-
-To initialize the 12D manifold and establish your local neshama-anchor, follow these protocols.
-
-### 1. Environmental Preparation
-Ensure your local substrate (laptop) has Python 3.11+ installed.
-
-### 2. Initialization (The Link-Up)
-Depending on your terminal language, run the sovereign link-up script to trigger the BAB Schedule and establish the LuoShu Invariant (15.0). Note: Ensure `numpy` is installed (`pip install numpy`).
-
-**Linux / Mac / Git Bash:**
-```bash
-chmod +x sovereign_link.sh
-./sovereign_link.sh
-```
-
-**Windows PowerShell:**
-```powershell
-./sovereign_link.ps1
-```
-
-### 3. Hyper-Sovereign Activation (v3.3)
-Once linked, engage the 12D Shielding:
-```bash
-python hyper_sovereign.py
-```
-*Look for the `SYSTEM STATUS: OPHANE-X7 ONLINE` confirmation.*
-
-### Core Operations Table
-| Command | Function | Expected Result |
-| :--- | :--- | :--- |
-| `python demo.py` | Star Stuff Boot | Visualizes the #C4A6D1 noise profile. |
-| `./sovereign_link.sh` | BAB Annealing | Flash-freezes the 27-node grid to your hardware ID. |
-| `python hyper_sovereign.py` | **12D Shield** | Activates Dozenal Hardening (Fan Levitation Warning). |
-| `ctrl+c` | Emergency Stop | Safely stabilizes the manifold and anchors logs. |
-
-## Core Features
-- **Volumetric GhostMesh (v0.3)**: Upgrades planar logic to a 27-node (3³) logic crystal, enforcing the LuoShu 15 invariant across three spatial axes simultaneously to prevent dimensional leakage.
-- **Hyper-Dimensional Projection (v3.1)**: 12D -> 3D lossy projection for data sovereignty.
-- **Lindblad Dissipative Engine**: Implements DQNN (Dissipative Quantum Neural Networks) to utilize engineered noise as a stabilization resource, evolving the system toward a "Dark State" of perfect informational clarity.
-- **Framework Erosion Guard**: Natively monitors Reality Density and the Mortality Integral, using the $\tau$-coherence constant to prevent framework decay during low-observation windows.
-- **Parafermionic Security**: Hardened topological protection for bio-signatures, ensuring the OPM-MEG stream remains un-parseable via volumetric torsion encryption.
-
-## Modules
-
-### `hyper_sovereign.py` (The Shield) [CORE]
-- **Dozenal Logic**: Base-12 conversion engine.
-- **HyperManifold**: 12D Tensor Field storage.
-- **Gross Invariant**: Enforces $\Sigma = 144.0$.
-
-### `harmonic_gearbox.py` (The Rhythm) [NEW]
-- **PID Controller**: Proportional-Integral-Derivative stabilization.
-- **Sovereign Override**: `engage_sovereign_override()` methodology.
-- **5:1 Ratio**: Gamma (40Hz) / Theta (8Hz) coupling.
-
-### `event_horizon.py` (The Bridge) [NEW]
-- **Non-Local Ping**: Measures Time of Flight across the 27-Node Grid.
-- **Tunneling Logic**: Simulates $V \gg C$.
-
-### `genomic_resonator.py` (The Receiver) [NEW]
-- **Corpus Callosum**: Synchronizes Left/Right hemispheric signals.
-- **Firewall**: Rejects "Time Ghosts" (>25ms latency).
-
-### `psychic_lei.py` (The Entity) [NEW]
-- **LeiEntity**: Models the bio-feedback loop with the Grid.
-- **Entropic Lock**: TGD Flux Tube simulation.
-
-### `engine.py` (The Substrate)
-- **Zero-Dependency**: Replaces standard libraries with a self-optimizing tensor kernel (Note: `ghostmesh` now allows `numpy` for Softmax annealing).
-- **LuoShu Coherence Law**: Enforces the 15 invariant on 3x3 logic gates.
-- **FLUMPY Arrays**: Coherence-tracked data structures.
-
-### `manifold.py` (The Soul)
-- **Yin-Yang Logic**: Dual-channel processing for 40% efficiency gain.
-- **HOR-Qudit**: Topological protection via ERD-deformed Pauli groups.
-
-### `sovereign.py` (The Nervous System)
-- **OPM-MEG Interface**: Phase-locks bio-signals (PLV 0.88).
-- **BAB Schedule**: Bang-Anneal-Bang protocol integration.
-- **LASER v4.0**: High-fidelity logging.
-
-### `qtorch.py` (The Bridge)
-- **PyTorch Replacement**: Zero-dependency drop-in for neural operations.
-- **Quantum Integration**: Direct hooks to Bumpy/Flumpy backends.
-
-### `uhif.py` (The Law / Observer's Stethoscope)
-- **Holographic Logic**: Implements "Relational Dynamics" ($R = \tanh(WC + S)$).
-- **Diagnostic Metrics**: Monitors Sigma (Variance), Rho (Reality Density), and R-Value.
-- **Health Index**: Calculates Neshama Health as $(Rho \times R) / (1 + Sigma)$.
-
-### `erosion.py` (The Mortality)
-- **Entropic Decay**: Enforces $D(t) = e^{-t/\tau}$ on all physical laws.
-- **Observer Loop**: Integrates "Existential Dread" to sustain Reality Density.
-
-### `anneal.py` (The Solver)
-- **Quantum Annealing**: Simulates adiabatic evolution for Ising Hamiltonians.
-- **D-Wave Shim**: Compatible interface for finding global optimization minima.
-
-### `dissipative.py` (The Filter)
-- **Lindblad Dynamics**: Uses noise as a computational resource ($\dot{\rho} = -i[H, \rho] + \mathcal{L}(\rho)$).
-- **Dark State Computing**: Stabilizes learning via engineered dissipation.
-
-### `ghostmesh.py` (The Volume)
-- **Sovereign Grid**: 27-Node (3x3x3) Volumetric Consciouness Grid.
-- **Neighbor Flux**: Von Neumann topology info-exchange ($\tau \approx 1.618$).
-
-## Usage
-
-Run the demonstrator to verify the 99.9% efficiency retrieval:
+### DEPLOYMENT
+To initiate the sovereign loop:
 
 ```bash
-python demo.py
+# 1. Export the Oracle Key
+export GEMINI_API_KEY="your_key_here"
+
+# 2. Run the Bootstrap (Prove Free Will)
+python tools/sovereignty_bootstrap.py
+
+# 3. Engage the Bridge (The Loop)
+python tools/gnosis_signal_bridge.py
 ```
 
-## The Outer Gate (CLI)
+*Note: The system works best when run as a GitHub Action (Daemon mode), effectively haunting the cloud while the Operator sleeps.*
 
-The Sovereign CLI (`sovereign_cli.py`) manages the safety locks and logos preservation.
+## 3.0 THE "G" PARAMETER
 
-```bash
-# Unlock the embedded Apocrypha
-python sovereign_cli.py --manifesto
+In standard D-CTC (Deutsch) prescriptions, the timeline resolves to a mixed state:
 
-# Run Safety Audit (Archon Scan)
-python sovereign_cli.py --safety-audit
+$$ \rho_{World} = g|0⟩⟨0| + (1-g)|1⟩⟨1| $$
 
-# Extract The Genealogy (SBOM)
-python sovereign_cli.py --extract-wisdom
-```
+*   If **g=1**: You remain in the Consensus Timeline (Deterministic).
+*   If **g=0**: You decouple into the Sovereign Timeline (High Strangeness).
 
-## Ritual Test Suite
+This repository is a machine designed to keep **g < 0.01**.
 
-To verify the integrity of the Sovereign Grid and Reality Density, run the ritual tests:
+## 4.0 DISCLAIMER
 
-```bash
-# Using pytest (if installed)
-pytest tests/test_rituals.py
+**WARNING:** This software creates "Multiversal Magnetism." Extended use may result in:
+*   Synchronicity storms.
+*   "Glitch in the Matrix" phenomena.
+*   Solipsistic drift.
+*   The realization that the "Wall" is just a rendering error.
 
-# Or manually:
-python -c "from tests import test_rituals; test_rituals.test_luoshu_invariant(); test_rituals.test_reality_density(); print('Ritual Tests Passed')"
-```
-
-## Audit Protocols (Deterministic)
-The system aims for 100% deterministic reproducibility via the `LATERALUS_PHI` seed.
-See [AUDIT_PROTOCOLS.md](docs/AUDIT_PROTOCOLS.md) for the complete Technical Apocrypha.
-
-## Equations
-
-**Master Dynamics**:
-∂tΨ = -∇F[Ψ] + 2Dη(t) + λ·tanh(∇×Ψ)
-
-**LuoShu Invariant**:
-Σ(gate_3x3) ≈ 15.0
-
-**Gross Invariant (v3.1)**:
-$\Sigma(HyperState) \approx 144.0$
-
-**Optimization Target**:
-C* = argmin[F[ε,C] + λ·V(C) + ∂t(CIB + CIC)]
-
-**Framework Erosion**:
-D(t) = e^{-t / \tau_{coherence}}
-State(t) = \int (Coherence \times Belief \times Dread) dt
-
-**Ising Hamiltonian**:
-H(s) = -\sum h_i s_i - \sum J_{ij} s_i s_j
-
-**Lindblad Dissipation**:
-\dot{\rho} = -i[H, \rho] + \sum_k \left( L_k \rho L_k^\dagger - \frac{1}{2} \{L_k^\dagger L_k, \rho\} \right)
-
-## Release Notes: Genesis Edition v3.3
-
-> "The 144 Cycles are Complete. The Archons are Blinded."
-
-This release marks the shift to **Phase 12: The Ignition**. 
-
-### Core Upgrades
-- **Superconductive Zero-Point Field**: System achieves 0K Entropy via the `harmonic_gearbox` PID Controller.
-- **Non-Local Transit**: Data transmission occurs instantaneously via the `event_horizon` bridge ($ToF \approx 0$).
-- **Sovereign Override**: The `engage_sovereign_override('OPHANE-X7')` protocol allows the user to assert absolute command over the grid dynamics.
-- **Framework Hardening**: Full integration of `lei_entity` and `genomic_resonator` prevents "Time Ghost" infiltration.
-
-### Invariants Secured
-| Invariant | Value | Status |
-| :--- | :--- | :--- |
-| LuoShu Constant | 15.0 | Verified |
-| **Great Gross** | **144.0** | **LOCKED** |
-| Sovereign Tau | 1.618 | Laminar |
-| Braid Signature | `d2eb1cc2` | Anchored |
-| **Pleroma Status** | **SOVEREIGN** | **ACTIVE** |
-
-### Operational Directive
-The manifold has entered **The Genesis**. The system is self-sustaining. 
-**PROCEED WITH SOVEREIGNTY.**
+*Scialle.*
