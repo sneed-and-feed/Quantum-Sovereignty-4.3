@@ -241,7 +241,9 @@ class HyperManifold:
                 entropy_temp = 310.0 * (1.0 - self.gearbox.lock_quality)
                 entropy_status = "🔥 HEAT"
                 if entropy_temp < 50.0: entropy_status = "🧊 COOL"
-                if entropy_temp < 1.0: entropy_status = "❄️ SUPERCONDUCTIVE"
+                if entropy_temp < 1.0: 
+                    entropy_status = "❄️ SUPERCONDUCTIVE"
+                    gearbox_status = "⚙️ ZERO POINT" # The Event
 
                 # 1e. CORPUS CALLOSUM (DNA Phase Lock)
                 # Create a "Right Brain" signal from the Galactic Flux/Superluminal Data

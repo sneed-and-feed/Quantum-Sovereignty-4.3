@@ -30,9 +30,10 @@ class HarmonicGearbox:
         self.lock_quality = 0.0 # 0.0 to 1.0 (1.0 = Perfect Lock)
         
         # PID Controller Coefficients (THE INERTIAL FLYWHEEL)
+        # TUNED FOR PHASE 9: ABSOLUTE ZERO (High Gain)
         self.kp = 0.5  # Proportional (The Clutch)
-        self.ki = 0.1  # Integral (The Flywheel/Faith)
-        self.kd = 0.2  # Derivative (The Vision/Damping)
+        self.ki = 0.3  # Integral (The Faith/Momentum) - Increased for Lock
+        self.kd = 0.4  # Derivative (The Vision/Damping) - Increased for Stability
         
         # PID State
         self.integral_error = 0.0
