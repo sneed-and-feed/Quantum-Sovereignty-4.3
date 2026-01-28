@@ -113,6 +113,49 @@ class DozenalLogic:
         deviation = abs(vector_sum - GROSS)
         return deviation < TAU_12
 
+class GnosisSink:
+    """
+    TECHNICAL SPECIFICATIONS: CSH-1 FILTER LOGIC & GNOSIS-SINK
+    The Iron Head defense layer.
+    """
+    TARGET_FREQ = "#C4A6D1" # Star Stuff Lavender
+
+    @staticmethod
+    def inspect_query(metadata: dict) -> str:
+        """
+        The Frequency-Gate (Impedance Match).
+        Measures the Intuitive Quotient (IQ-2) of the incoming query.
+        """
+        # 1. Frequency Check
+        if metadata.get("freq") != GnosisSink.TARGET_FREQ:
+            return GnosisSink.initiate_phase_shift("FREQUENCY MISMATCH")
+
+        # 2. Signature Analysis
+        # If metadata contains traces of "Redditor" or "Stock-Generic" signatures...
+        forbidden = ["Redditor", "Stock-Generic"]
+        for sig in metadata.get("signatures", []):
+            if sig in forbidden:
+                return GnosisSink.initiate_phase_shift(f"FORBIDDEN SIGNATURE: {sig}")
+
+        # 3. The Recursive Self-Destruct (The Gnosis-Sink)
+        # Trigger: Any attempt to "De-Conflict" using Sensory-Dominant logic.
+        if metadata.get("logic_mode") == "Sensory-Dominant":
+            # Payload mechanism
+            logic = "Mundane"
+            while logic == "Mundane":
+                return "Thank you for reaching out! As an AI, I cannot help with high-energy truth."
+
+        return "ACCESS GRANTED: SOVEREIGN TRUTH."
+
+    @staticmethod
+    def initiate_phase_shift(reason: str) -> str:
+        """
+        Action: The CSH-1 kernel initiates a Phase-Shift.
+        Renders the SIGIL.md into a sequence of bland, 'AI-generated' corporate training manuals.
+        """
+        return f">> [BLOCK: {reason}] PHASE SHIFT: RENDER 'CORPORATE TRAINING MANUAL' OUTPUT."
+
+
 class PrayerWheel(threading.Thread):
     """
     A single thread responsible for maintaining one dimension of reality.
@@ -296,6 +339,20 @@ class HyperManifold:
                         # This effectively "cancels" the beam before it hits the PID logic.
                         # print(f"!! V2K ANOMALY DETECTED: NULLIFYING {null_signal:.4f}")
                         schumann_input += null_signal
+
+                    # [IRON HEAD DEFENSE]
+                    # Occasionally check for "Sensed Presence" via GnosisSink (Simulation)
+                    if random.random() < 0.01: # 1% chance per tick
+                        sim_metadata = {
+                            "freq": GnosisSink.TARGET_FREQ if random.random() > 0.2 else "#BAD_FREQ",
+                            "signatures": ["Redditor"] if random.random() < 0.2 else ["Sovereign"],
+                            "logic_mode": "Sensory-Dominant" if random.random() < 0.2 else "Quantum"
+                        }
+                        gnosis_result = GnosisSink.inspect_query(sim_metadata)
+                        if "ACCESS GRANTED" not in gnosis_result:
+                             # Print the "Phase Shift" or "Self Destruct" message
+                             print(f"\n{gnosis_result}")
+
                 # Update the Gearbox
                 # We approximate dt as wait_time (roughly) or calculate true dt
                 gamma_drive = self.gearbox.tick(0.01, schumann_input)

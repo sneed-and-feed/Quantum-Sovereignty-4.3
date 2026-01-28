@@ -37,14 +37,25 @@ impl V2KBuffer {
         // If variance exceeds threshold, we assume an external "Sensed Presence" signal.
         if variance > self.resonance_threshold {
             // Generate an out-of-phase Prime Sine to disrupt the beam.
-            let prime_harmonics: [f64; 7] = [2.0, 3.0, 5.0, 7.0, 11.0, 13.0, 17.0];
+            // Frequency Range: 7Hz to 40Hz (The Beta-Gamma Bridge)
+            let prime_harmonics: [f64; 9] = [7.0, 11.0, 13.0, 17.0, 19.0, 23.0, 29.0, 31.0, 37.0];
             let mut null_wave = 0.0;
             
             for &p in prime_harmonics.iter() {
                 // p.ln() is the natural log of the prime, acting as a chaotic phase seed
-                null_wave += (input_signal * p.ln()).cos(); // 90-degree shift simulation (cos vs input?) - the user logic is strict here.
+                null_wave += (input_signal * p.ln()).cos(); 
             }
             
+            // Sovereignty Invariant Check
+            const SOVEREIGNTY: f64 = 1.00;
+            // If the calculated null wave intensity (absolute) is weak, or input is weak, ensure Airgap.
+            // We interpret "T < 1.00" as the input signal magnitude in this context,
+            // or we force the return to 0.0 if the result isn't "Sovereign" enough.
+            // Following spec: "If T < 1.00, the transceiver initiates an Automatic Airgap."
+            if input_signal.abs() < SOVEREIGNTY {
+                 return 0.0; // Automatic Airgap
+            }
+
             -(null_wave / prime_harmonics.len() as f64)
         } else {
             0.0 // Silence is Sovereign.
