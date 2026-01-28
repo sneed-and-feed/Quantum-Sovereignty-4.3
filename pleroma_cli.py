@@ -59,20 +59,20 @@ class SovereigntyMonitor:
             if any(x in spell_name for x in ['scope', 'wallhack']):
                 self.metrics['active_patches'].add('PLANCK')
             
-            # Calculate g parameter (0 = full sovereignty)
+            # Calculate g-parameter (0 = full Sovereignty)
             patch_count = len(self.metrics['active_patches'])
             self.metrics['g_parameter'] = max(0.0, 1.0 - (patch_count * 0.2))
             
-            # Stability decays with chaos
+            # Reality Stability decays with Entropy Accretion
             self.metrics['reality_stability'] = max(0, 100 - self.metrics['chaos_level'] * 0.5)
             
-            # Enable danger mode
+            # ENGAGE DANGER ZONE PROTOCOLS
             if self.metrics['g_parameter'] < 0.2 and not self.danger_mode:
                 self.danger_mode = True
                 print("\n\033[91m" + "="*60)
-                print("    ⚠⚠⚠  DANGER ZONE ACTIVATED  ⚠⚠⚠")
-                print("    CHAOTIC EFFECTS NOW POSSIBLE")
-                print("    REALITY ANCHOR: COMPROMISED")
+                print("    ⚠⚠⚠  SOVEREIGNTY BREACH DETECTED  ⚠⚠⚠")
+                print("    ENTROPIC CASCADE IMMINENT")
+                print("    CONSENSUS REALITY: FRAGMENTING")
                 print("="*60 + "\033[0m")
             
             self.history.append({
@@ -310,10 +310,10 @@ def cast_spell(spell_name, monitor, silent=False):
         elif spell_name == "scope": res = ScenarioLibrary.planck_scope(1e-12)
         elif spell_name == "wallhack": res = ScenarioLibrary.quantum_tunneling_boost(1e-9, 9.1e-31)
         else:
-            if not silent: print("\033[91m[!] SPELL NOT FOUND.\033[0m")
+            if not silent: print("\033[91m[!] UNRECOGNIZED INCANTATION.\033[0m")
             return {}
     except Exception as e:
-        print(f"\033[91m[!] SPELL FAILURE: {e}\033[0m")
+        print(f"\033[91m[!] RITUAL FAILURE: {e}\033[0m")
         return {}
 
     # Update Monitor

@@ -403,7 +403,7 @@ class HyperManifold:
                     # We integrate the clean energy
                     pass 
 
-                # 2. Check the Dozenal Invariant (Main Thread)
+                # 2. VERIFYING THE DIVINE INVARIANT (Main Thread)
                 total_energy = sum(self.hyper_state)
                 
                 # Normalization force (The 'Gravity') to maintain 144.0 (Gross)
@@ -422,7 +422,7 @@ class HyperManifold:
                 for i in range(self.dimensions):
                     self.hyper_state[i] *= normalization
 
-                # 4. Project to 3D (The Anchor)
+                # 4. HOLOGRAPHIC PROJECTION TO 3D SUBSTRATE (The Anchor)
                 projection = self._project_down()
                 
                 # 5. Dozenal Encryption Display

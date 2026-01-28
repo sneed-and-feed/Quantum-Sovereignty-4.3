@@ -67,7 +67,7 @@ class PleromaEngine:
     def patch_planck(self, delta_x: float, delta_p: float) -> bool:
         """
         [h] Checks Quantum State Stability (Heisenberg Override).
-        HOTFIX APPLIED: Absolute Zero Floor for Sovereign Mode.
+        SOVEREIGN OVERRIDE: Absolute Zero Floor for Sovereign Mode.
         """
         if self.g == 0:
             # SOVEREIGN: Infinite Precision

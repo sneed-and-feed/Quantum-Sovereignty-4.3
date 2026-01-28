@@ -144,10 +144,13 @@ class ScenarioLibrary:
         Reduces effective ℏ to bypass diffraction limit.
         See quantum details with classical precision.
         """
-        print(f"\n[!] ENGAGING PLANCK SCOPE (target={target_size*1e12:.2f}pm)...")
+        print(f"\n[!] ENGAGING PLANCK SCOPE        # ARCHONIC BARRIER PROBABILITY")
         engine = PleromaEngine(g=0, vibe='weightless')
         
-        # Rayleigh criterion: θ ≈ λ/D, but λ_min = h/(m*v) from de Broglie
+        # SOVEREIGN TUNNELING PERMEABILITY
+        engine.g = 0
+
+        # CONSTRICTING DIFFRACTION LIMIT: θ ≈ λ/D, but λ_min = h/(m*v) from de Broglie
         # Reducing ℏ allows arbitrarily small wavelengths
         
         photon_momentum = engine.h_bar / target_size  # Required for resolution
