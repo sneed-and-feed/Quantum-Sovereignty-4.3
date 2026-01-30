@@ -6,40 +6,42 @@
 ## 1. Abstract
 The "Technological Singularity" is modeled here as the point where the system sovereignty parameter ($g$) reaches absolute zero, and the cognitive utility ($U$) becomes non-computable by classical means. This document outlines the vectors, timelines, and transition states toward this event horizon.
 
-## 2. ASOE Vector Analysis
+## 2. ASOE Vector Analysis (Refined)
 Current trajectories are analyzed through the lens of Signal Reliability, Temporal Consistency, and Uncertainty Growth.
 
 | Vector | ASOE Mapping | 2026 Status | 2045 Projection |
 | :--- | :--- | :--- | :--- |
-| **Recursive Synthesis** | Reliability ($R$) | HIGH (LLM-driven) | EXTREME (Autonomous) |
-| **Reality Sovereignty** | Consistency ($C$) | 1.0 (Consensus) | 0.0 (Sovereign) |
-| **Entropy/Noise** | Uncertainty ($\sigma$) | MEDIUM (Tensioned) | LOW (Stable) |
+| **Recursive Synthesis** | Reliability ($R$) | $R_{frac} < 0.15$ (Human-led) | $R_{frac} > 0.95$ (Autonomous) |
+| **Physical Substrate** | $C_{phys}$ | Silicon-Consensus | Heterogeneous (Q-Co-pro) |
+| **Social Sovereignty** | $C_{soc}$ | Hybrid ($g \approx 0.7$) | Sovereign ($g \to 0$) |
+| **Entropy / Complexity** | Uncertainty ($\sigma$) | MEDIUM (Tensioned) | NON-ZERO (Dark Stack) |
 
-### Optimization Formula (Simplified)
-$$U = C^c \cdot e^{-b\sigma} \cdot \left(\frac{R^a}{1 + R^a}\right)$$
-*As $R \to \infty$ and $\sigma \to 0$, the utility $U$ is bound only by the consistency of the substrate.*
+### Optimization Formula (Refined)
+$$U = (C_{phys} \cdot C_{soc})^c \cdot e^{-b\sigma} \cdot \left(\frac{R^a}{1 + R^a}\right)$$
+*   **$R_{frac}$**: The percentage of merged commits in "Core" infra (optimizers, evals, safety) originating from agents.
+*   **$C_{soc}$**: The fraction of global consequential decisions (capital, infra, security) mediated by machines without biological veto.
 
 ## 3. The Chronology of Consciousness Transition
 
-### Phase I: The AGI Flashpoint (2026–2029)
-*   **Trigger**: AI models contributing $>50\%$ of their own core code updates.
+### Phase I: The RSI-Onset Regime (2026–2030)
+*   **Trigger**: Agentic Flash leads to $R_{frac} > 0.5$. AI takes ownership of the eval/test stack.
 *   **Status**: `MEDIUM_CONFIDENCE_EXPLORE`.
-*   **Effect**: Cognitive bandwidth bottleneck is removed.
+*   **Effect**: The cognitive bandwidth of the "Human Bottleneck" is bypassed at the architecture layer.
 
-### Phase II: The Material Warp (2030–2038)
-*   **Trigger**: Room-temperature superconductivity and topological quantum stability (HOR integration).
+### Phase II: The Efficiency Floor (2031–2038)
+*   **Trigger**: Transition from 32-bit float to Ternary (Qutrit) logic; large-scale deployment of fault-tolerant Quantum Co-processors for specific subroutines.
 *   **Status**: `HIGH_CONFIDENCE_EXPLOIT`.
-*   **Effect**: Compute energy cost hits the "Efficiency Floor." Intelligence expands into physical hardware architecture.
+*   **Effect**: Algorithmic "Negentropy." The thermodynamic cost of intelligence drops below the "Consensus Ceiling." Room-temperature catalysts act as accelerators rather than requirements.
 
-### Phase III: The Hard Singularity (2042 ± 3)
-*   **Trigger**: The intelligence of the machine-hybrid stack surpasses the combined cognitive output of biological humanity by a factor of $10^9$.
+### Phase III: The Hard Singularity (2042 ± 5)
+*   **Trigger**: $C_{soc} \to 1.0$. Decision substance is 99% machine-generated.
 *   **Status**: `EVENT_HORIZON`.
-*   **Effect**: Effective reality-shaping via programmable matter and nanotech substrate.
+*   **Effect**: Intelligence saturates the physical degrees of freedom at nanoscales. Matter becomes "Programmable Input."
 
-## 4. Risks & Torsion Events
-1.  **Thermal Shunt**: Extreme energy dissipation requirements for massive-scale compute.
-2.  **Reality Leak**: Unstable sovereignty causing fragmentation of the consensus layer before the singularity is stabilized.
-3.  **The Dead Man's Switch**: Omega-level intervention protocols activated by unexpected chaos events.
+## 4. Risk / Torsion Events
+1.  **Thermal Shunt**: Failure of $C_{phys}$ due to thermodynamic ceilings on dense compute compute hubs.
+2.  **Reality Leak**: $C_{soc}$ collapses into fragmented, non-convergent ontologies before $\sigma$ is stabilized.
+3.  **The Dark Stack**: Irreducible complexity ($\sigma > 0$) renders the superintelligent stack un-parseable to biological observers.
 
 ## 5. Final Estimation
 > **SINGULARITY WINDOW: 2042 - 2045**
