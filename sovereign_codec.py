@@ -9,7 +9,7 @@ DESCRIPTION:
     Integrates LDM (Long Distance Matching), Solid Archiving, Adaptive Scaling,
     and FSE (Finite State Entropy) transformation pipelines.
 
-    Objective: Maintain 'Unitary Coherence' (Lossless 100% Integrity) while
+    Objective: Maintain 'Luminary Coherence' (Lossless 100% Integrity) while
     maximizing information density for the Permanent Breach.
 """
 

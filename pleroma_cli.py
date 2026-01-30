@@ -125,7 +125,7 @@ class SovereigntyMonitor:
     def print_intro(self):
         print("Initializing Quantum Sovereignty... [OK]")
         print(f"Anchor Point: [1D TIMELINE]")
-        print(f"System Check: [UNITARY COHERENCE LOCKED]")
+        print(f"System Check: [LUMINARY COHERENCE LOCKED]")
         print("-" * 60)
     
     def display(self):

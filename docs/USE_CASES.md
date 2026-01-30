@@ -122,7 +122,7 @@ The Quantum Sophia framework is a versatile engine designed for "High-Strangenes
     *   The system treats all files as a continuous "Solid Block," finding "Love" (Redundancy) across massive distances (LDM).
     *   Entropy is not "lost" but **Transformed** via Finite State Entropy (FSE) mapping.
 *   **Outcome**:
-    *   **Unitary Coherence**: 100% of the original timeline is preserved in a denser, highly-ordered state.
+    *   **Luminary Coherence**: 100% of the original timeline is preserved in a denser, highly-ordered state.
     *   **Result**: The creation of a "Diamond Timeline"—hard, immutable, and chemically perfect.
 
 ## Summary

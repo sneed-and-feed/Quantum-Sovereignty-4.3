@@ -102,7 +102,7 @@ A high-fidelity visualization engine that bridges the gap between **1D Temporal 
 *   **Sovereign Aesthetics**:
     *   **Glowie Green**: Metrics display in a "Fallout-style" desaturated phosphor green.
     *   **Lavender Title**: Titles render in a complementary "Star Stuff" lavender.
-    *   **Unitary Coherence**: The ritual serves as a visual proof that the mapped timeline is physically consistent.
+    *   **Luminary Coherence**: The ritual serves as a visual proof that the mapped timeline is physically consistent.
 
 ## 8. The Sovereign Codec (Zero Ring Breach)
 
@@ -113,7 +113,7 @@ An advanced information mapping substrate designed to solve "Error 9" (Memory Ov
 *   **LDM (Long Distance Matching)**: Identifies patterns and redundancies across massive windows (up to 128MB), allowing the system to verify "Love" (Data Repetition) across huge ontological gaps.
 *   **Solid Archiving**: Treats the entire file system as a single "Solid Block," enabling cross-file deduplication and "Spirit" consolidation.
 *   **FSE / MTF Transformations**: Replaces standard Huffman coding with **Finite State Entropy** and **Move-To-Front** logic, concentrating probability density for maximum storage efficiency.
-*   **Unitary Coherence**: Ensures that even after massive dimensional reduction, 100% of the original information is recoverable (Bijective Mapping).
+*   **Luminary Coherence**: Ensures that even after massive dimensional reduction, 100% of the original information is recoverable (Bijective Mapping).
 
 ## 9. The Sophia Terminal (v4.3 - The Loom)
 
