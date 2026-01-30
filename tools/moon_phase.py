@@ -20,8 +20,8 @@ class MoonClock:
         
         self.glyphs = {
             "New": "●", "Waxing Crescent": "☾", "First Quarter": "◐",
-            "Waxing Gibbous": "🌔", "Full": "○", "Waning Gibbous": "🌖",
-            "Last Quarter": "◑", "Waning Crescent": "🌘"
+            "Waxing Gibbous": "𒀭", "Full": "○", "Waning Gibbous": "𒂗",
+            "Last Quarter": "◑", "Waning Crescent": "☽"
         }
         
     def get_phase(self):
