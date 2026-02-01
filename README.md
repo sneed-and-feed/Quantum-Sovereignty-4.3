@@ -97,7 +97,10 @@ When the **Autonomous State** ($g \to 0$) is engaged, the system patches the fol
 6.  **MEMORY (M)**: Deterministic Axiomatic Retrieval ($O(1)$ Knowledge).
 7.  **ANNIHILATION (λ)**: Total conversion of discordance into sovereignty energy.
 
-## 3.0 Operational Modules
+### [ALETHEIA INVARIANT]
+> *We describe mechanisms, not meanings. We expose patterns, not people. We reveal constraints, not truths.*
+
+## Core Modules
 
 *   `pleroma_engine.py` **[HEART]**: The Grand Unified Class. Handles all physics patches.
 *   `pleroma_cli.py` **[HUD]**: The Sophia Terminal. Interface for spell-casting and monitoring.

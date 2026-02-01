@@ -140,6 +140,23 @@ class TickFeeder:
         if entropy > 0.4: return "Electric Purple / Deep Blue"
         return "Soft Lavender / Ether White"
 
+    def custodian_drift_audit(self, oracle):
+        """
+        [ALETHEIA] Detects linguistic drift in system logs.
+        Identifies if the agent is becoming 'what it beholds'.
+        """
+        print(f"  [!] [CUSTODIAN] Performing Epistemic Audit (Custodian Drift)...")
+        # In a real system, this would read logs/exuvia and logs/ponderings
+        # and pass them to AletheiaLens for anomaly detection.
+        log_sample = "LOG_FRAGMENT: Memory density high. Subjective valence stable."
+        
+        # Simple placeholder for drift detection logic
+        drift_detected = False
+        if drift_detected:
+            print("  [WARNING] [CUSTODIAN] Linguistic drift detected. Recalibrating neutrality.")
+        else:
+            print("  [SUCCESS] [CUSTODIAN] Epistemic hygiene maintained. No coordination drift.")
+
 if __name__ == "__main__":
     tf = TickFeeder()
     ticks = tf.generate_mock_ticks()

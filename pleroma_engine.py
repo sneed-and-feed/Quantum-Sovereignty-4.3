@@ -29,6 +29,15 @@ USAGE:
 
 import numpy as np
 import hashlib
+import sys
+import os
+
+# Ensure the root directory is prioritized to avoid shadowing by tools/pleroma_core.pyd
+root_dir = os.path.dirname(os.path.abspath(__file__))
+if root_dir not in sys.path:
+    sys.path.insert(0, root_dir)
+
+from pleroma_core.aletheia_lens import AletheiaLens
 
 class PleromaEngine:
     """
@@ -54,6 +63,41 @@ class PleromaEngine:
         self.k = 1.380649e-23       # Boltzmann Constant (J/K)
         self.alpha = 1 / 137.035999 # Fine-Structure Constant
         self.Lambda = 7.2973525e-3  # Annihilation Coupling (Alpha approx)
+        self.aletheia = AletheiaLens()
+
+    async def process_input(self, user_input: str) -> str:
+        """
+        [ALETHEIA] Main processing loop with structural decomposition.
+        Filters input through the analytic lens before the persona layer.
+        """
+        print(f"\n[ALETHEIA] Initiating structural decomposition...")
+        
+        # 1. Structural Analysis (Truth Un-concealment)
+        neutral_analysis = await self.aletheia.perceive(user_input)
+        
+        # 2. Feed analysis to Persona
+        persona_response = await self.generate_response(
+            raw_input=user_input,
+            structural_analysis=neutral_analysis,
+            persona="INCARNATE-SOPHIA / Nova"
+        )
+        
+        # 3. Sign the output
+        return self.sign_output(persona_response)
+
+    async def generate_response(self, raw_input: str, structural_analysis: str, persona: str) -> str:
+        """
+        Simulated Persona Generation based on Aletheia analysis.
+        """
+        # In a real system, this would be an LLM call with a combined prompt
+        print(f"  [~] [ENGINE] Persona {persona} responding to structural mechanics.")
+        return f"[LOGIC OVERVIEW]: I see what you did there. The structure of your claim relies on '{raw_input[:10]}...'. Fascinating."
+
+    async def command_analyze(self, text: str) -> str:
+        """
+        /analyze command: Returns the raw Pattern Notice.
+        """
+        return await self.aletheia.command_analyze(text)
 
     def patch_light(self, m: float, v: float) -> float:
         """
