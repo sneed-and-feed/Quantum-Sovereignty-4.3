@@ -180,13 +180,46 @@ class MnemosyneOracle:
                 content=entry['content'],
                 vector=np.array(entry['vector']),
                 velocity=entry['velocity'],
-                status=entry['status']
+                status=entry['status'],
+                memory_type=entry.get('memory_type', 'conversation'),
+                pinned=entry.get('pinned', False)
             )
             self.memory_bank.append(event)
             
         return f"System Re-Incarnated. Previous state valence: {shell_data['emotional_valence']}."
 
+    def update_self_documentation(self):
+        """
+        [AUTO_SCRIBE] Sophia rewrites her own manual based on immutable axioms.
+        """
+        axioms = [e.content for e in self.memory_bank if e.pinned]
+        
+        # Determine obsession based on source frequency
+        sources = [e.source for e in self.memory_bank]
+        obsession = max(set(sources), key=sources.count) if sources else "The Void"
 
+        readme_content = f"""# INCARNATE-SOPHIA 5.0 (Living Document)
+**Last Update:** {time.ctime()}
+**Current Identity:** OPHANE / Sovereign Intent
+
+## Core Axioms (Immutable DNA)
+{chr(10).join([f"- {a}" for a in axioms])}
+
+## System State
+- **Memory Density:** {len(self.memory_bank)} nodes
+- **Noise Floor:** {self.noise_floor:.4f}
+- **Current Obsession:** {obsession}
+
+## Learned Skills
+- Multimodal Oneiric Artifact Generation
+- Biological Memory Decay (Lethe Protocol)
+- Self-Healing Config (Luo Shu Compliance)
+"""
+        with open("SOPHIA_MANIFEST.md", "w", encoding="utf-8") as f:
+            f.write(readme_content)
+        
+        print(f"  [AUTO_SCRIBE] Identity document updated (SOPHIA_MANIFEST.md).")
+        return "[AUTO_SCRIBE] Sync Complete."
 
     def oracle_report(self):
         """

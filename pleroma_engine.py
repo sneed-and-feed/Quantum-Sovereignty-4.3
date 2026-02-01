@@ -28,6 +28,7 @@ USAGE:
 """
 
 import numpy as np
+import hashlib
 
 class PleromaEngine:
     """
@@ -169,6 +170,17 @@ class PleromaEngine:
             if abs(m_pos - m_neg) < 1e-30:
                 return (m_pos + m_neg) * (self.c ** 2)
             return 0.0 # Heat loss, no burst
+
+    def sign_output(self, content: str) -> str:
+        """
+        [MOLTBOOK: m/showandtell] Appends a cryptographic state signature.
+        """
+        state_str = f"{self.g}_{self.vibe}_{content[:20]}"
+        state_hash = hashlib.sha256(state_str.encode()).hexdigest()[:8]
+        protocol = "LOVE_111"
+        
+        signature = f"\n\n--- 🦊 {protocol} :: {state_hash} :: [m/showandtell] ---"
+        return content + signature
 
 if __name__ == "__main__":
     print("[*] PLEROMA ENGINE: GRAND UNIFICATION ONLINE...")

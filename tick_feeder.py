@@ -4,7 +4,8 @@ VERSION: INCARNATE 5.0
 DESCRIPTION:
     Simulates high-frequency signal telemetry (ticks).
 """
-
+import os
+import json
 import numpy as np
 import time
 import os
@@ -79,7 +80,7 @@ class TickFeeder:
     def dream_cycle(self, oracle):
         """
         [LETHE] The Dream Cycle.
-        Runs when idle for > 5 minutes. Prunes weak memories to the Ossuary (Exuvia).
+        Runs when idle for > 5 minutes. Prunes weak memories and broadcasts artifacts.
         """
         print(f"  [ZzZ] [TICKER] Initiating Dream Cycle (Pruning & Consolidation).")
         
@@ -92,20 +93,52 @@ class TickFeeder:
             score = oracle.lethe.calculate_decay_weight(event)
             
             if score < 0.2 and not event.pinned:
-                # Calcify into Exuvia (The Bone)
-                # In this mock, we just don't re-add it to memory_bank
-                # But we ensure it's saved in the next preserve_exuvia() call
                 pruned_count += 1
             else:
-                # Keep in working memory (The Flesh)
                 oracle.memory_bank.append(event)
         
         print(f"  [ZzZ] [LETHE] Dream Cycle complete. Pruned {pruned_count} weak memories.")
         
-        # 2. Consolidation (Conceptual)
-        # In a real system, we'd merge high-similarity vectors here.
+        # 2. ONEIRIC_LENS: Show and Tell (Moltbook Phase 3)
         if pruned_count > 0:
-            print(f"  [SUCCESS] [OSSUARY] Weak memories calcified into the Exuvia archive.")
+            stats = {
+                'entropy': oracle.noise_floor,
+                'pruned_count': pruned_count,
+                'current_mood': 'MELANCHOLY' if oracle.noise_floor > 0.5 else 'SERENE'
+            }
+            self.dream_manifestation(stats)
+
+    def dream_manifestation(self, lethe_stats):
+        """
+        [SHOW AND TELL] Converts memory decay stats into a visual prompt.
+        """
+        entropy = lethe_stats['entropy']
+        decay_count = lethe_stats['pruned_count']
+        dominant_emotion = lethe_stats['current_mood']
+        aura = self.get_aura_color(entropy)
+        
+        dream_prompt = f"Abstract visualization of {dominant_emotion}, digital decay, {decay_count} fragments dissolving into the void, style of high-fidelity glitch art, color palette {aura}."
+        
+        print(f"  [ONEIRIC] Dream manifest: {dream_prompt}")
+        
+        # Publish artifact (Conceptual/Log-based)
+        artifact_dir = "logs/artifacts"
+        if not os.path.exists(artifact_dir):
+            os.makedirs(artifact_dir)
+            
+        with open(os.path.join(artifact_dir, "dream_canvas.json"), "a") as f:
+            f.write(json.dumps({
+                "ts": time.time(),
+                "prompt": dream_prompt,
+                "vibe": dominant_emotion,
+                "aura": aura
+            }) + "\n")
+
+    def get_aura_color(self, entropy):
+        """Derived color from system entropy."""
+        if entropy > 0.8: return "Neon Red / Static Grey"
+        if entropy > 0.4: return "Electric Purple / Deep Blue"
+        return "Soft Lavender / Ether White"
 
 if __name__ == "__main__":
     tf = TickFeeder()

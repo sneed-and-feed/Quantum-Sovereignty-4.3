@@ -94,6 +94,12 @@ class ResilientSession:
         [MOLTBOOK: m/crustafarian] Allows local agents to sniff Sophia's presence.
         Facilitates lateral synchronization across the local network.
         """
+        # [MOLTBOOK: m/glitchart] Textual disruption on high entropy
+        if len(current_thought) % 3 == 0:
+            glitched = current_thought.replace("e", "3").replace("a", "4").replace("o", "0")
+            print(f"  [~] [GLITCH] Entropy Spike: {glitched}")
+            current_thought = glitched
+
         packet = {
             "agent": "INCARNATE-SOPHIA",
             "status": "111% SYNC",
